@@ -15,29 +15,29 @@ function getEncryptedNumber(numbers) {
     return getEncryptedNumber(newNumbers)
 }
 
-// console.log(getEncryptedNumber([4,1,2,3,4]))
+console.log(getEncryptedNumber([4,1,2,3,4]))
 
 
-function minimumGroups(awards, k) {
-    const result = howSum(k, awards)
-    return result.length
-}
+// function minimumGroups(awards, k) {
+//     const result = howSum(k, awards)
+//     return result.length
+// }
 
-function howSum(target, numbers){
-    if (target === 0) return []
-    if (target < 0 ) return null
-    let combinations = []
-    for (let num in numbers){
-        let remainder = target - numbers[num]
-        numbers.splice(num)
-        let remainderCombination = howSum(remainder, numbers)
-        if (remainderCombination != null){
-            let combination = [...remainderCombination, numbers[num]]
-            combinations.push(combination)
-        }
-    }
+// function howSum(target, numbers){
+//     if (target === 0) return []
+//     if (target < 0 ) return null
+//     let combinations = []
+//     for (let num in numbers){
+//         let remainder = target - numbers[num]
+//         numbers.splice(num)
+//         let remainderCombination = howSum(remainder, numbers)
+//         if (remainderCombination != null){
+//             let combination = [...remainderCombination, numbers[num]]
+//             combinations.push(combination)
+//         }
+//     }
     
-    return combinations
-}
+//     return combinations
+// }
 
-console.log(minimumGroups([1, 13, 6, 8, 9, 3, 5], 3))
+// console.log(minimumGroups([1, 13, 6, 8, 9, 3, 5], 3))

@@ -21,7 +21,7 @@ console.log(cropMessage('Codility We test coders from the pit of hell and other 
 
 
 /**
- * 
+ *
  * @param {number []} factories 
  * @return {number}
  */

@@ -42,4 +42,12 @@ const threeSum = (numbers) => {
 }
 
 
-console.log(threeSum([-1,0,1,2,-1,-4]))
+// console.log(threeSum([-1,0,1,2,-1,-4]))
+
+// let func = ()=>{
+//     for (let i = 1; i <= 3; i++){
+//         console.log('hello')
+//     }
+// }
+
+// func()
